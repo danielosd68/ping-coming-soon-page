@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+html body {
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+html body header .logo h1 {
+  font-weight: 300;
+  color: #969696;
+}
+
+html body header .logo h1 b {
+  font-weight: 600;
+  color: #151f29;
+}
+
+html body main p {
+  font-size: 0.9em;
+}
+
+html body main .form form input[type="email"] {
+  border-radius: 40px;
+}
