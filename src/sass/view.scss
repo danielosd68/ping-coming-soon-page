@@ -44,7 +44,7 @@ html {
 
             .form {
                 padding-top: 2vh;
-                width: 100%;
+                width: max-content;
                 height: 50%;
 
                 form {
@@ -54,6 +54,10 @@ html {
                     align-items: center;
                     height: 100%;
 
+                    @media only screen and (min-width:1000px) {
+                        flex-direction: row;
+                    }
+
                     input[type="email"] {
                         width: 70vw;
                         height: 3vh;
@@ -61,11 +65,29 @@ html {
                         padding-left: 8vw;
 
                         @media only screen and (max-height:700px) {
-                            height: 6vh;
+                            height: 4.4vh;
                         }
 
                         @media only screen and (max-height:550px) {
                             height: 6vh;
+                        }
+
+                        @media only screen and(min-width:650px) {
+                            width: 60vw;
+                        }
+
+                        @media only screen and (min-width:1000px) {
+                            width: 50vw;
+                            padding-left: 6vw;
+                        }
+
+                        @media only screen and (min-width:1400px) {
+                            width: 35vw;
+                            padding-left: 4vw;
+                        }
+
+                        @media only screen and (min-width:1800px) {
+                            width: 25vw;
                         }
 
                     }
@@ -82,6 +104,25 @@ html {
 
                         @media only screen and (max-height:550px) {
                             height: 8vh;
+                        }
+
+                        @media only screen and (min-width:650px) {
+                            width: 70vw;
+                        }
+
+                        @media only screen and (min-width:1000px) {
+                            margin-top: 0;
+                            width: 20vw;
+                            margin-left: 5vw;
+                        }
+
+                        @media only screen and (min-width:1400px) {
+                            width: 15vw;
+                        }
+
+                        @media only screen and (min-width:1800px) {
+                            width: 10vw;
+                            margin-left: 3vw;
                         }
                     }
 
@@ -101,6 +142,18 @@ html {
                     margin-top: 20vh;
                 }
 
+                @media only screen and (min-width:650px) {
+                    width: 50%;
+                }
+
+                @media only screen and (min-width:1000px) {
+                    width: 35%;
+                }
+
+                @media only screen and (min-width:1800px) {
+                    width: 20%;
+                }
+
                 img {
                     width: 100%;
                     height: auto;
@@ -114,6 +167,10 @@ html {
             display: flex;
             justify-content: end;
             flex-direction: column;
+
+            @media only screen and (min-width:1800px) {
+                justify-content: center;
+            }
 
             .social-media {
                 display: flex;
@@ -131,6 +188,12 @@ html {
                     align-items: center;
                     margin-left: 3vw;
                     margin-right: 3vw;
+
+
+                    @media only screen and (min-width:1800px) {
+                        margin-left: 1vw;
+                        margin-right: 1vw;
+                    }
                 }
             }
 

@@ -9,6 +9,7 @@
   "author": "Daniel Chyliński",
   "license": "ISC",
   "dependencies": {
+    "bootstrap-icons": "^1.8.2",
     "css-loader": "^6.7.1",
     "jquery": "^3.6.0",
     "node-sass": "^7.0.1",

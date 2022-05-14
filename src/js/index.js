@@ -1,5 +1,6 @@
 import { } from '../sass/style.scss';
 import { } from '../sass/view.scss';
+import { } from '../../node_modules/bootstrap-icons/font/bootstrap-icons.css';
 
 const $ = require('jquery');
 
@@ -15,19 +16,36 @@ $("#btn").on('click', e => {
 
     if (emailValue == "") {
         $("#email").css('border', '1px solid red');
-        $(".error").html("Please enter your email...");
+        $(".error").html("<i>Please enter your email...</i>");
     }
 
     else if (reg.test(emailValue) === false) {
         $("#email").css('border', '1px solid red');
-        $(".error").html("Please provide valid email address");
+        $(".error").html("<i>Please provide valid email address</i>");
 
     }
     else {
         $("form").remove();
-        $(".form").html("<h1>Thanks for subscribing!");
+        $(".form").html("<h1>Thanks for subscribing!</h1>");
         $(".form").css('text-align', 'center');
 
     }
 });
+
+
+const item = document.querySelectorAll('.bi');
+const circle = document.querySelectorAll('.item');
+
+for (let i = 0; i < item.length; i++) {
+    circle[i].addEventListener('mouseover', e => {
+        circle[i].style.backgroundColor = 'hsl(223, 87%, 63%)';
+        circle[i].style.border = 'none';
+        item[i].style.color = 'white';
+    });
+
+    circle[i].addEventListener('mouseout', e => {
+        circle[i].style.backgroundColor = 'white';
+        item[i].style.color = 'hsl(223, 87%, 63%)';
+    });
+}
 

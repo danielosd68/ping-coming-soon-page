@@ -7,6 +7,8 @@ $lightRed: hsl(354, 100%, 66%);
 $gray: hsl(0, 0%, 59%);
 $veryDarkBlue: hsl(209, 33%, 12%);
 
+
+
 html {
     body {
         font-family: 'Libre Franklin', sans-serif;
@@ -54,11 +56,13 @@ html {
                         cursor: pointer;
                     }
 
-                    .error {
-                        color: $lightRed;
-                    }
 
 
+
+                }
+
+                .error {
+                    color: $lightRed;
                 }
             }
         }
@@ -67,8 +71,17 @@ html {
             .social-media {
                 .item {
                     border-radius: 100%;
-                    border: 1px solid $paleBlue;
+
+                    .bi {
+                        color: $blue;
+                    }
                 }
+
+                .item:hover {
+                    cursor: pointer;
+                }
+
+
             }
 
             p {
