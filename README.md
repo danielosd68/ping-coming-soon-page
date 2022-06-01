@@ -1,4 +1,5 @@
 # Frontend Mentor - Ping coming soon page
+link: https://danielosd68.github.io/ping-coming-soon-page/dist
 
 ![Design preview for the Ping coming soon page coding challenge](./design/desktop-preview.jpg)
 
